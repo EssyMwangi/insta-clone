@@ -52,3 +52,7 @@ python manage.py makemigrations instagram
  ```bash 
  python manage.py runserver 
 ``` 
+##### Running the application  
+ ```bash 
+ python manage.py server 
+```
