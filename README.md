@@ -73,5 +73,5 @@ If you have any question or contributions, please email me at [sonnieessy@gmail.
   
 ## License 
 
-* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)]()  
+* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](https://github.com/EssyMwangi/insta-clone/blob/development/LICENSE)  
 * Copyright (c) 2020 **Essy Mwangi**
