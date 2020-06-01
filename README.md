@@ -17,3 +17,4 @@ Users can sign up, login, view and post photos, search and follow other users.
 ## User Story  
 * Sign in to the application to start using. 
 * Upload a pictures to the application. 
+* Search for different users using their usernames.  
