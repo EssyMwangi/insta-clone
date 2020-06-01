@@ -14,3 +14,5 @@ Users can sign up, login, view and post photos, search and follow other users.
 ###### user profile
  <img src=""> 
 
+## User Story  
+* Sign in to the application to start using. 
