@@ -20,3 +20,6 @@ Users can sign up, login, view and post photos, search and follow other users.
 * Search for different users using their usernames.  
 * See your profile with all your pictures.  
 * Follow other users and see their pictures on my timeline.  
+
+## Setup and Installation  
+To get the project .......  
