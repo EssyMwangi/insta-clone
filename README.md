@@ -35,3 +35,7 @@ cd insta-clone pip install -r requirements.txt
  ```bash 
 - python3 -m venv virtual - source virtual/bin/activate  
 ```  
+##### Install Dependencies  
+ ```bash 
+ pip install -r requirements.txt 
+```  
