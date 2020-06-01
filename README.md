@@ -27,3 +27,7 @@ To get the project .......
  ```bash 
 https://github.com/EssyMwangi/insta-clone
 ```
+##### Navigate into the folder and install requirements  
+ ```bash 
+cd insta-clone pip install -r requirements.txt 
+```
