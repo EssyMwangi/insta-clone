@@ -23,3 +23,7 @@ Users can sign up, login, view and post photos, search and follow other users.
 
 ## Setup and Installation  
 To get the project .......  
+##### Cloning the repository:  
+ ```bash 
+https://github.com/EssyMwangi/insta-clone
+```
