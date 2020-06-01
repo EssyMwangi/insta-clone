@@ -39,3 +39,12 @@ cd insta-clone pip install -r requirements.txt
  ```bash 
  pip install -r requirements.txt 
 ```  
+ ##### Setup Database  
+  SetUp your database User,Password, Host then make migrate  
+ ```bash 
+python manage.py makemigrations instagram
+ ``` 
+ Now Migrate  
+ ```bash 
+ python manage.py migrate 
+```
