@@ -25,13 +25,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 MODE=config("MODE", default="dev")
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -93,30 +94,24 @@ WSGI_APPLICATION = 'instaclone.wsgi.application'
 #     }
 # }
 # development
-if config('MODE')=="dev":
-   DATABASES = {
-       'default': {
+
+DATABASES = {
+     'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': config('DB_NAME'),
-           'USER': config('DB_USER'),
-           'PASSWORD': config('DB_PASSWORD'),
-           'HOST': config('DB_HOST'),
-           'PORT': '',
+           'NAME': os.environ.get('DB_NAME','postgres'),
+           'USER': os.environ.get('DB_USER','postgres'),
+           'PASSWORD': os.environ.get('DB_PASSWORD','password'),
+           'HOST': os.environ.get('DB_HOST','localhost'),
+           'PORT': os.environ.get('DB_PORT','5432'),
        }
-       
-   }
-# production
-else:
-   DATABASES = {
-       'default': dj_database_url.config(
-           default=config('DATABASE_URL')
-       )
-   }
+  
+}
+
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+
 # DATABASES = {
 #     'default': dj_database_url.config(
 #         default=config('DATABASE_URL')
