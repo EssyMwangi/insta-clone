@@ -12,10 +12,10 @@ Users can sign up, login, view and post photos, search and follow other users.
 ## Screenshots 
 ###### Home page
  
-<img src="">
+<img src="https://user-images.githubusercontent.com/44394821/83543652-68ce6e00-a505-11ea-8c9a-3701c7b3a8de.png">
 
 ###### user profile
- <img src=""> 
+ <img src="https://user-images.githubusercontent.com/44394821/83543622-5d7b4280-a505-11ea-8e40-6748652e448d.png"> 
 
 ## User Story  
 * Sign in to the application to start using. 
